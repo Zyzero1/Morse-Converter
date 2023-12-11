@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("bg.jpg");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 0;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 99;
+  display: fixed;
+}
+
+.logo {
+  font-size: 1.5em;
+  color: #00e5ff;
+}
+
+.navigation {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 100px;
+}
+
+
+.menu a {
+  position: relative;
+  font-size: 1em;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  margin-right: 40px; 
+}
+
+.menu a.active,
+.menu a:hover {
+  background: linear-gradient(45deg, #f06, #3cf);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.menu a:hover .bi-caret-down-fill {
+  fill: rgb(36, 158, 199);
+  color: transparent;
+  -webkit-background-clip: text;
+}
+
+.menu .side-index {
+  position: fixed;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+  width: 275px;
+  height: 100vh;
+  top: 0;
+  right: -100%;
+  overflow-y: auto;
+  scrollbar-width: thin; /* for Firefox */
+  scrollbar-color: #36a2cc #0f0f0f;
+}
+
+.menu .side-index .item {
+  color: #ffffff;
+  font-size: 1.1em;
+  text-decoration: none;
+  display: block;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  margin-left: 0px;
+  padding: 0px 45px;
+  line-height: 42px;
+}
+
+.menu .side-index {
+  /* ... other styles ... */
+  scrollbar-width: thin; /* For Firefox */
+  scrollbar-color: #36a2cc99 rgba(255, 255, 255, 0.093); /* For Firefox */
+
+  /* Webkit (Chrome, Safari, Opera) and Microsoft Edge */
+  &::-webkit-scrollbar {
+    width: 9px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #36a2cc99; /* Color of the scrollbar thumb */
+    border-radius: 4px; /* Roundness of the scrollbar thumb */
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: rgba(255, 255, 255, 0.093); /* Color of the scrollbar track */
+  }
+
+  /* Microsoft Edge specific styles */
+  scrollbar-width: thin; /* For Microsoft Edge */
+  scrollbar-color: #36a2cc99 rgba(255, 255, 255, 0.093); /* For Microsoft Edge */
+}
+
+
+.close-btn {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  color: #fff;
+  font-size: 20px;
+  padding: 2px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom-right-radius: 6px;
+}
+
+.close-btn i{
+  line-height: 1;
+}
+
+.close-btn i:hover {
+  background-color: #f06;
+  border-bottom-right-radius: 5px;
+}
+
+#particles-js{
+  align-items: center;
+  display: fixed;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.container {
+  text-align: center;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  display: fixed;
+  position: fixed;
+  align-items: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 450px;
+
+}
+
+.kotak {
+  text-align: center;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 5);
+  display: flex;
+  position: fixed;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -45%);
+  height: 530px;
+  border: 1px solid #ffffff24;
+}
+
+.home {
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.home h1{
+  font-size: 36px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.home h3{
+  font-size: 20px;
+  font-weight: 400;
+  color: #fff;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.home h4{
+  font-size: 26px;
+  font-weight: 400;
+  color: #fff;
+  text-align: center;
+  margin-top: 105px;
+}
+
+.icon {
+  width: 100%;
+}
+
+.home-sci {
+  display: flex;
+  justify-content: space-between;
+}
+
+.home-sci a {
+  position: relative;
+  text-decoration: none;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+  margin: 0 10px; 
+  display: flex;
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(45deg, rgb(115, 0, 255), #f06, #ece62b);
+  border-radius: 50%;
+  font-size: 20px;
+  z-index: 1;
+}
+
+.home-sci i {
+  font-size: 24px;
+}
+
+.bxl-instagram-alt:before {
+  content: "\f16d";
+}
+  
+textarea {
+  width: 100%;
+  height: 100px;
+  margin: 10px 0;
+  font-size: 18px;
+}
+  
+button {
+  padding: 10px;
+  background-color: #4caf50;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+  
+button:hover {
+   background-color: #45a049;
+}
+
+#footer {
+  position: fixed;
+  bottom: 3px;
+  left: 13px;
+  color: #fff; /* Warna teks putih */
+  font-size: 12px;
+}
+  

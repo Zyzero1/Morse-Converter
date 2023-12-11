@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+  <link rel="icon" type="png" href="morse-code.png">
+  <title>Morse Converter</title>
+</head>
+
+<body>
+  <header>
+    <div id="particles-js">
+      <canvas class="particles-js-canvas-el"></canvas>
+      <nav class="navigation">
+        <h2 class="logo">Morse Converter</h2>
+        <div class="menu">
+          <a href="#" class="active">Home</a>
+          <a href="about.html" >About</a>
+          <a href="#" id="indexMenu">Morse Table<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16"><path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/></svg></a>
+          <div class="side-index">
+            <span class="close-btn">
+              <i class="bi bi-x"></i>
+            </span>
+            <div class="item"><b href="#"> Letter</b></div>
+            <div class="item"><b href="#">A = [ .- ]</b></div>
+            <div class="item"><b href="#">B = [ -... ]</b></div>
+            <div class="item"><b href="#">C = [ -.-. ]</b></div>
+            <div class="item"><b href="#">D = [ -.. ]</b></div>
+            <div class="item"><b href="#">E = [ . ]</b></div>
+            <div class="item"><b href="#">F = [ ..-. ]</b></div>
+            <div class="item"><b href="#">G = [ --. ]</b></div>
+            <div class="item"><b href="#">H = [ .... ]</b></div>
+            <div class="item"><b href="#">I = [ .. ]</b></div>
+            <div class="item"><b href="#">J = [ .--- ]</b></div>
+            <div class="item"><b href="#">K = [ -.- ]</b></div>
+            <div class="item"><b href="#">L = [ .-.. ]</b></div>
+            <div class="item"><b href="#">M = [ -- ]</b></div>
+            <div class="item"><b href="#">N = [ -. ]</b></div>
+            <div class="item"><b href="#">O = [ --- ]</b></div>
+            <div class="item"><b href="#">P = [ .--. ]</b></div>
+            <div class="item"><b href="#">Q = [ --.- ]</b></div>
+            <div class="item"><b href="#">R = [ .-. ]</b></div>
+            <div class="item"><b href="#">S = [ ... ]</b></div>
+            <div class="item"><b href="#">T = [ - ]</b></div>
+            <div class="item"><b href="#">U = [ ..- ]</b></div>
+            <div class="item"><b href="#">V = [ ...- ]</b></div>
+            <div class="item"><b href="#">W = [ .-- ]</b></div>
+            <div class="item"><b href="#">X = [ -..- ]</b></div>
+            <div class="item"><b href="#">Y = [ -.-- ]</b></div>
+            <div class="item"><b href="#">Z = [ --.. ]</b></div>
+            <div class="item"><b href="#">Space = [/ ]</b></div>
+            <div class="item"><b href="#"></b> Number</div>
+            <div class="item"><b href="#">1 = [ .---- ]</b></div>
+            <div class="item"><b href="#">2 = [ ..--- ]</b></div>
+            <div class="item"><b href="#">3 = [ ...-- ]</b></div>
+            <div class="item"><b href="#">4 = [ ....- ]</b></div>
+            <div class="item"><b href="#">5 = [ ..... ]</b></div>
+            <div class="item"><b href="#">6 = [ -.... ]</b></div>
+            <div class="item"><b href="#">7 = [ --... ]</b></div>
+            <div class="item"><b href="#">8 = [ ---.. ]</b></div>
+            <div class="item"><b href="#">9 = [ ----. ]</b></div>
+            <div class="item"><b href="#">0 = [ ----- ]</b></div>
+          </div>
+        </div>
+      </nav>
+      <div class="container">
+        <h1>Morse Code Converter</h1>
+        <div class="conversion-type">
+          <label>
+            <input type="radio" name="conversionType" value="morseToText" checked onchange="changeConversion()"> Morse to Text
+          </label>
+          <label>
+            <input type="radio" name="conversionType" value="textToMorse" onchange="changeConversion()"> Text to Morse
+          </label>
+        </div>
+        <textarea id="inputText" placeholder="Enter text or Morse code"></textarea>
+        <button onclick="convert()">Convert</button>
+        <textarea id="outputText" placeholder="Result" readonly></textarea>
+      </div>
+    </div>
+    <div id="footer">
+      <p>@Senggarang Selatan Production 2023</p>
+    </div>
+  </header>
+  <script src="script.js"></script>
+  <script src="particles.js"></script>
+  <script src="app.js"></script>
+  <script>
+    $('')
+  </script>
+</body>
+
+</html>
