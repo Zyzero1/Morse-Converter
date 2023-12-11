@@ -1,2 +1,2 @@
-# Morse-Converter
+# Morse-Code-Converter
 Web
