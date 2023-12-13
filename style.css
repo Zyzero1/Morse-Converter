@@ -163,7 +163,7 @@ header {
   text-align: center;
   padding: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 5);
-  backdrop-filter: blur(20px);
+  backdrop-filter: blur(10px);
   display: flex;
   position: fixed;
   flex-direction: column;
