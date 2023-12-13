@@ -157,7 +157,6 @@ header {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 450px;
-
 }
 
 .kotak {
@@ -265,5 +264,93 @@ button:hover {
   left: 13px;
   color: #fff; /* Warna teks putih */
   font-size: 12px;
+}
+
+/* Tablet */
+@media (max-width: 758px) {
+  html {
+    font-size: 62.5%;
+  }
+
+  .logo {
+    margin-left: -65px;
+  }
+
+  .menu {
+    display: flex;
+    align-items: center;
+    padding: 0px 40px;
+    width: 100px;
+    margin-right: -100px;
+  }
+
+  .menu a {
+    font-size: 8px;
+    margin-right: 10px; 
+  }
+
+  .menu #indexMenu {
+    margin-right: -30px;
+  }
+
+  .menu .bi-caret-down-fill {
+    width: 9px; /* Adjust the width to make it smaller */
+    height: 9px;
+  }
+
+  .menu .side-index {
+    width: 150px;
+    z-index: 1;
+  }
+
+  .menu .side-index .item {
+    font-size: 0.8em;
+    padding: 0px 35px;
+    line-height: 30px;
+  }
+
+  .container {
+    text-align: center;
+    padding: 20px;
+    display: fixed;
+    position: fixed;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 250px;
+    height: 330px;
+  }
+
+  .kotak {
+    width: 250px;
+  }
+
+  .home {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .home h1{
+    font-size: 18px;
+    font-weight: 600;
+  }
+  
+  .home h3{
+    font-size: 12px;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 100px;
+  }
+  
+  .home h4{
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 105px;
+  }
 }
   
